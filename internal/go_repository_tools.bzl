@@ -77,7 +77,7 @@ def _go_repository_tools_impl(ctx):
                 "run",
                 ctx.path(ctx.attr._list_repository_tools_srcs),
                 "-dir=src/github.com/bazelbuild/bazel-gazelle",
-                "-check=internal/go_repository_tools_srcs.bzl",
+                "-generate=internal/go_repository_tools_srcs.bzl",
             ],
             environment = env,
         )
